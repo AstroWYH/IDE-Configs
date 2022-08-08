@@ -1,0 +1,252 @@
+{
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4 }",
+    "git.ignoreMissingGitWarning": true,
+
+    "editor.selectionHighlight": false,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 32,
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "settingsSync.ignoredExtensions": [
+    ],
+    "workbench.colorCustomizations": {
+    "[Quiet Light]": {
+        "editor.background": "#C7EDCC",   
+        "sideBar.background": "#C7EDCC",
+        "activityBar.background": "#C7EDCC",       
+        },
+    // 设置用户选中代码段的颜色 
+    "editor.selectionBackground": "#C7C7C7",
+    // 搜索匹配的背景色
+/*     "editor.findMatchBackground": "#FFC2E0",
+    "editor.findMatchHighlightBackground": "#F7C6D9", */
+    // "editor.findRangeHighlightBackground": "#ff9900"
+    },
+    // "workbench.preferredDarkColorTheme": "SynthWave '84",
+    "editor.fontWeight": "normal",
+    "editor.find.loop": false,
+    "gnuGlobal.globalExecutable": "C:\\global\\bin\\global.exe",
+    "gnuGlobal.gtagsExecutable": "C:\\global\\bin\\gtags.exe",
+    "gnuGlobal.autoUpdate": "Disabled",
+    "json.schemas": [
+    
+    ],
+    "editor.fontFamily": "monacob",
+    "extensions.ignoreRecommendations": true,
+    "bookmarks.wrapNavigation": false,
+    "bookmarks.showNoMoreBookmarksWarning": false,
+    "highlight.configuration.ignoreCase": false,
+    "bookmarks.navigateThroughAllFiles": false,
+    "tabnine.experimentalAutoImports": true,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    // "C_Cpp.intelliSenseEngine": "Default",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.largeFileOptimizations": false,
+    "bookmarks.sideBar.expanded": true,
+    "highlight.configuration.colors": [
+        {
+            "light": "#ffff80",
+            "dark": "#F5B041"
+        },
+        {
+            "light": "#A3E7FF",
+            "dark": "#FF9933"
+        },
+        {
+            "light": "#FFCEB3",
+            "dark": "#85C1E9"
+        },
+        {
+            "light": "#F3F3F3",
+            "dark": "#CD6155"
+        },
+        {
+            "light": "#7CCCC1",
+            "dark": "#AF7AC5"
+        },
+        {
+            "light": "#BFD0F5",
+            "dark": "#48C9B0"
+        },
+        {
+            "light": "#75D19C",
+            "dark": "#52BE80"
+        },
+        {
+            "light": "#EFCFFF",
+            "dark": "#F4D03F"
+        }
+    ],
+/*     "highlight.configuration.colors": [
+            {
+                "light": "#375830",
+                "dark": "#375830"
+            },
+            {
+                "light": "#5f3c23",
+                "dark": "#5f3c23"
+            },
+            {
+                "light": "#7d5886",
+                "dark": "#7d5886"
+            },
+            {
+                "light": "#2468a2",
+                "dark": "#2468a2"
+            },
+            {
+                "light": "#733a31",
+                "dark": "#733a31"
+            },
+            {
+                "light": "#b3424a",
+                "dark": "#b3424a"
+            },
+            {
+                "light": "#4d4f36",
+                "dark": "#4d4f36"
+            },
+            {
+                "light": "#4f5555",
+                "dark": "#4f5555"
+            }
+        ], */
+    "remote.SSH.remotePlatform": {
+        "Hanbabang": "linux"
+    },
+    "cmake.configureOnOpen": true,
+    "remoteX11.SSH.privateKey": "C:\\Users\\m-astrowang\\.ssh\\id_rsa",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontFamily": "monaco",
+    "workbench.editorAssociations": {
+        "*.cpp": "default",
+        "git-rebase-todo": "default"
+    },
+    "terminal.integrated.scrollback": 3000,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "outline.problems.badges": false,
+    "outline.problems.colors": false,
+    "outline.problems.enabled": false,
+    "outline.showConstants": false,
+    "outline.showBooleans": false,
+    "outline.showArrays": false,
+    "outline.showVariables": false,
+    "outline.showTypeParameters": false,
+    "outline.showStructs": false,
+    "outline.showStrings": false,
+    "outline.showProperties": false,
+    "outline.showPackages": false,
+    "outline.showOperators": false,
+    "outline.showObjects": false,
+    "outline.showNumbers": false,
+    "outline.showNull": false,
+    "outline.showModules": false,
+    "outline.showKeys": false,
+    "outline.showFiles": false,
+    "outline.showFields": false,
+    "outline.showEvents": false,
+    "outline.showEnums": false,
+    "outline.showEnumMembers": false,
+    "outline.showClasses": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.views.commits.files.compact": false,
+    "gitlens.views.commits.avatars": false,
+    "gitlens.views.commits.showBranchComparison": false,
+    "gitlens.views.commits.pullRequests.enabled": false,
+    "gitlens.views.repositories.showBranchComparison": false,
+    "gitlens.views.repositories.showUpstreamStatus": false,
+    "gitlens.views.repositories.pullRequests.enabled": false,
+    "gitlens.views.repositories.autoRefresh": false,
+    "gitlens.views.repositories.autoReveal": false,
+    "gitlens.views.repositories.avatars": false,
+    "gitlens.views.repositories.showCommits": false,
+    "gitlens.views.repositories.showBranches": false,
+    "gitlens.views.repositories.showRemotes": false,
+    "gitlens.views.repositories.showStashes": false,
+    "gitlens.views.repositories.showContributors": false,
+    "gitlens.views.repositories.showTags": false,
+    "gitlens.views.repositories.files.compact": false,
+    "gitlens.views.fileHistory.files.compact": false,
+    "gitlens.views.fileHistory.avatars": false,
+    "gitlens.views.branches.showBranchComparison": false,
+    "gitlens.views.branches.pullRequests.enabled": false,
+    "gitlens.views.branches.files.compact": false,
+    "gitlens.views.branches.avatars": false,
+    "gitlens.views.remotes.pullRequests.enabled": false,
+    "gitlens.views.remotes.files.compact": false,
+    "gitlens.views.remotes.avatars": false,
+    "gitlens.views.stashes.files.compact": false,
+    "gitlens.views.tags.files.compact": false,
+    "gitlens.views.tags.avatars": false,
+    "gitlens.views.contributors.pullRequests.enabled": false,
+    "gitlens.views.contributors.files.compact": false,
+    "gitlens.views.contributors.avatars": false,
+    "gitlens.views.searchAndCompare.pullRequests.enabled": false,
+    "gitlens.views.searchAndCompare.files.compact": false,
+    "gitlens.views.searchAndCompare.avatars": false,
+    "gitlens.blame.compact": false,
+    "gitlens.blame.highlight.enabled": false,
+    "gitlens.blame.heatmap.enabled": false,
+    "gitlens.blame.avatars": false,
+    "gitlens.changes.locations": [],
+    "gitlens.heatmap.locations": [],
+    "gitlens.menus": false,
+    "gitlens.mode.statusBar.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "files.autoGuessEncoding": true,
+    "workbench.editor.enablePreview": false,
+    "editor.fontSize": 21,
+    "synthwave84.brightness": 0,
+    "synthwave84.disableGlow": true,
+    "oneDarkPro.bold": true,
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "/home/workspace/leetcode",
+    "leetcode.nodePath": "/home/mysoftware/nodejs/node-v16.15.0-linux-x64/bin/node",
+    "leetcode.hint.commentDescription": false,
+    "leetcode.defaultLanguage": "cpp",
+    "picgo.picBed.github.branch": "master",
+    "picgo.picBed.current": "github",
+    "picgo.picBed.github.path": "Pics/",
+    "picgo.picBed.github.repo": "AstroWYH/All-Pictures",
+    "picgo.picBed.github.token": "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",
+    "picgo.picBed.github.customUrl": "https://raw.githubusercontent.com/AstroWYH/All-Pictures@main",
+    "leetcode.useWsl": true,
+    "editor.cursorBlinking": "solid",
+    "C_Cpp.dimInactiveRegions": false,
+    "workbench.colorTheme": "Quiet Light",
+    "editor.minimap.enabled": false,
+    "search.mode": "reuseEditor",
+    "glsllint.glslangValidatorPath": "D:\\Glslang\\glslang-master-windows-x64-Release\\bin\\glslangValidator.exe",
+    "window.zoomLevel": -1,
+    "C_Cpp.default.compilerPath": "",
+    "C_Cpp.default.includePath": [
+        "                \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/include/**\",                 \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++\",                 \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32\",                 \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward\",                 \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include\",                 \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed\",                 \"D:/MinGw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include\""
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.hover.sticky": false,
+    "editor.hover.enabled": false,
+    "RainbowBrackets.depreciation-notice": false,
+    "RainbowBrackets.showBracketsInGutter": true,
+}
