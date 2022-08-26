@@ -4,8 +4,6 @@
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4 }",
     "git.ignoreMissingGitWarning": true,
-
-    "editor.selectionHighlight": false,
     "editor.fontLigatures": true,
     "editor.lineHeight": 35,
     "[json]": {
@@ -23,7 +21,6 @@
 //         "activityBar.background": "#C7EDCC",       
 //         },
 //     // 设置用户选中代码段的颜色 
-//     "editor.selectionBackground": "#C7C7C7",
 //     // 搜索匹配的背景色
 // /*     "editor.findMatchBackground": "#FFC2E0",
 //     "editor.findMatchHighlightBackground": "#F7C6D9", */
@@ -51,10 +48,10 @@
     "editor.largeFileOptimizations": false,
     "bookmarks.sideBar.expanded": true,
     "highlight.configuration.colors": [
-        {
-            "light": "#ffff80",
-            "dark": "#F5B041"
-        },
+        // {
+        //     "light": "#ffff80",
+        //     "dark": "#F5B041"
+        // },
         {
             "light": "#A3E7FF",
             "dark": "#FF9933"
@@ -290,21 +287,22 @@
             "editor.background": "#C7EDCC",
             "sideBar.background": "#C7EDCC",
             "activityBar.background": "#C7EDCC",
-            },
+        },
         // 设置用户选中代码段的颜色 
-        "editor.selectionBackground": "#C7C7C7",
+        // "editor.selectionBackground": "#C7C7C7",
         // 搜索匹配的背景色
-        // "editor.findMatchBackground": "#FFC2E0",
-        // "editor.findMatchHighlightBackground": "#F7C6D9",
+        "editor.findMatchHighlightBackground": "#FFFF96",
         // "editor.findRangeHighlightBackground": "#ff9900"
         // "terminal.integrated.rightClickBehavior": "paste", //字体大小设置
-        // "editor.selectionBackground": "#FFFF96",    //選取字色 'you can set other color'
-        // "editor.findMatchBackground": "#FFFF96",  //搜索選取字色 'you can set other color'
-        // "editor.selectionHighlightBackground": "#00000000", //選取字改透明色  'required important'
-        // "editor.findMatchHighlightBackground": "#00000000", //搜索選取字改透明色 'required important'
-        // "editor.wordHighlightBackground": "#00000000",  //全文相同選取字改透明色 'required important'
+        "editor.selectionHighlightBackground": "#FFC2E0",
+        // "editor.inactiveSelectionBackground": "#f1f1a4",
+        // "editor.selectionBackground": "#C7EDCC",    //選取字色 'you can set other color'
+        "editor.findMatchBackground": "#f1f1a4",  //搜索選取字色 'you can set other color' FFC2E0 是经典搜索粉色
+        // "editor.selectionHighlightBackground": "#000000", //選取字改透明色  'required important'
+        // "editor.findMatchHighlightBackground": "#000000", //搜索選取字改透明色 'required important'
+        // "editor.wordHighlightBackground": "#000000",  //全文相同選取字改透明色 'required important'
         // "editorBracketMatch.border": "#FF0000",   //括號的框線色 'you can set other color'
-        // "editorBracketMatch.background": "#0052cc"  //括號的背景色 'you can set other color'
+        // "editorBracketMatch.background": "#0052cc",  //括號的背景色 'you can set other color'
 
         "terminal.background": "#C7EDCC",
         "terminal.foreground": "#26e045",
@@ -335,31 +333,35 @@
         // "terminal.integrated.shell.linux": "/bin/zsh",
         },
         "terminal.integrated.rightClickBehavior": "paste",
-
-        "highlight-icemode.borderWidth": "0px", //default 1px
-        "highlight-icemode.borderRadius": "0px",
+        // "highlightwords.colors": [
+        //     { "light": "#b3d9ff", "dark": "cyan" },
+        //     { "light": "#e6ffb3", "dark": "pink" },
+        //     { "light": "#b3b3ff", "dark": "lightgreen" },
+        //     { "light": "#ffd9b3", "dark": "magenta" },
+        //     { "light": "#ffb3ff", "dark": "cornflowerblue" },
+        //     { "light": "#b3ffb3", "dark": "orange" },
+        //     { "light": "#ffff80", "dark": "green" },
+        //     { "light": "#d1e0e0", "dark": "red" }                                        
+        // ],
+        // "highlightwords.box": {
+        //     "light": false,
+        //     "dark": true
+        // },
+        // "highlightwords.defaultMode": {
+        //     "default": 1
+        // },
+        // "highlightwords.showSidebar": {
+        //     "default": true
+        // },
+        // "highlight-icemode.backgroundColor": "#D8D8D8",
+        // "highlight-icemode.caseSensitive": true,
+        // "highlight-icemode.borderWidth": "0px", //default 1px
+        // "highlight-icemode.borderRadius": "0px",
+        "editor.occurrencesHighlight": false,
+        "editor.matchBrackets": "never",
+        "select-highlight-cochineal-color.matchBrackets": false,
+        "editor.selectionHighlight": false,
+        // "editor.occurrencesHighlight": false,
         // "highlight-icemode.borderColor": "", //default ''
         // "highlight-icemode.backgroundColor": "", //default ''
-
-        "highlightwords.colors": [
-            { "light": "#b3d9ff", "dark": "cyan" },
-            { "light": "#e6ffb3", "dark": "pink" },
-            { "light": "#b3b3ff", "dark": "lightgreen" },
-            { "light": "#ffd9b3", "dark": "magenta" },
-            { "light": "#ffb3ff", "dark": "cornflowerblue" },
-            { "light": "#b3ffb3", "dark": "orange" },
-            { "light": "#ffff80", "dark": "green" },
-            { "light": "#d1e0e0", "dark": "red" }                                        
-        ],
-        "highlightwords.box": {
-            "light": false,
-            "dark": true
-        },
-        "highlightwords.defaultMode": {
-            "default": 1
-        },
-        "highlightwords.showSidebar": {
-            "default": true
-        },
-        "highlight-icemode.backgroundColor": "#D8D8D8"
 }
