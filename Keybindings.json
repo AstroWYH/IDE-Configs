@@ -650,4 +650,16 @@
         "command": "-scrollLineDown",
         "when": "textInputFocus"
     },
+    {
+        "key": "ctrl+shift+a",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "alt+q",
+        "command": "openInTerminal"
+    },
 ]
