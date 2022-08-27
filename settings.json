@@ -360,6 +360,8 @@
         "editor.occurrencesHighlight": false,
         "editor.matchBrackets": "never",
         "select-highlight-cochineal-color.matchBrackets": false,
+        // "editor.selectionHighlight": false,
+        "copyOnSelect.copyOnMouseSelection": true,
         "editor.selectionHighlight": false,
         // "editor.occurrencesHighlight": false,
         // "highlight-icemode.borderColor": "", //default ''
