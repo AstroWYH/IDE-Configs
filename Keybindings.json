@@ -81,7 +81,7 @@
         "when": "inReferenceSearchEditor || referenceSearchVisible"
     },
     {
-        "key": "1",
+        "key": "alt+1",
         "command": "highlight.selectedWords"
     },
     {
@@ -131,7 +131,7 @@
         "when": "inQuickOpen && inViewsPicker"
     },
     {
-        "key": "f2",
+        "key": "ctrl+p ctrl+o",
         "command": "bookmarks.toggle",
         "when": "editorTextFocus"
     },
@@ -191,7 +191,7 @@
         "when": "variablesFocused"
     },
     {
-        "key": "ctrl+oem_4 ctrl+oem_6",
+        "key": "ctrl+enter",
         "command": "remote.tunnel.label",
         "when": "tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
     },
@@ -269,7 +269,7 @@
         "when": "debugState == 'running'"
     },
     {
-        "key": "f3",
+        "key": "ctrl+p ctrl+oem_4",
         "command": "workbench.action.terminal.findPrevious",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
@@ -363,7 +363,7 @@
         "command": "-workbench.action.showAllSymbols"
     },
     {
-        "key": "ctrl+oem_4 ctrl+p",
+        "key": "alt+x",
         "command": "toggleSearchEditorWholeWord",
         "when": "inSearchEditor && searchInputBoxFocus"
     },
@@ -373,7 +373,7 @@
         "when": "inSearchEditor && searchInputBoxFocus"
     },
     {
-        "key": "alt+c",
+        "key": "alt+z",
         "command": "toggleSearchEditorCaseSensitive",
         "when": "inSearchEditor && searchInputBoxFocus"
     },
@@ -505,7 +505,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+f",
+        "key": "1",
         "command": "actions.find",
         "when": "editorFocus || editorIsOpen"
     },
@@ -561,7 +561,7 @@
         "command": "cursorRedo"
     },
     {
-        "key": "shift+alt+up",
+        "key": "ctrl+numpad5",
         "command": "extension.cursor-jump",
         "when": "editorTextFocus"
     },
@@ -661,5 +661,165 @@
     {
         "key": "alt+q",
         "command": "openInTerminal"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "easy-highlight.Highlight"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "easy-highlight.RemoveHighlight"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "easy-highlight.RemoveAllHighlights"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "extension.翻译选中文本"
+    },
+    {
+        "key": "ctrl+p ctrl+o",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+p ctrl+o",
+        "command": "markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+up",
+        "command": "-extension.cursor-jump",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f3",
+        "command": "findWordAtCursor.next",
+        "when": "editorTextFocus && !findWidgetVisible"
+    },
+    {
+        "key": "f3",
+        "command": "-findWordAtCursor.next",
+        "when": "editorTextFocus && !findWidgetVisible"
+    },
+    {
+        "key": "f2",
+        "command": "findWordAtCursor.previous",
+        "when": "editorTextFocus && !findWidgetVisible"
+    },
+    {
+        "key": "shift+f3",
+        "command": "-findWordAtCursor.previous",
+        "when": "editorTextFocus && !findWidgetVisible"
+    },
+    {
+        "key": "ctrl+oem_6 ctrl+oem_4",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "f3",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "alt+x",
+        "command": "workbench.action.terminal.toggleFindWholeWord",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+w",
+        "command": "-workbench.action.terminal.toggleFindWholeWord",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+x",
+        "command": "toggleFindWholeWord",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-toggleFindWholeWord",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+x",
+        "command": "toggleSearchWholeWord",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-toggleSearchWholeWord",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+c",
+        "command": "workbench.action.terminal.sizeToContentWidth",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+    },
+    {
+        "key": "alt+z",
+        "command": "-workbench.action.terminal.sizeToContentWidth",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+    },
+    {
+        "key": "alt+z",
+        "command": "toggleSearchCaseSensitive",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-toggleSearchCaseSensitive",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+z",
+        "command": "toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+p ctrl+o",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "alt+1",
+        "command": "-workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "alt+f",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
     },
 ]
