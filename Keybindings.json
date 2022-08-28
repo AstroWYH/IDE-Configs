@@ -81,7 +81,7 @@
         "when": "inReferenceSearchEditor || referenceSearchVisible"
     },
     {
-        "key": "alt+1",
+        "key": "1",
         "command": "highlight.selectedWords"
     },
     {
@@ -505,7 +505,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "1",
+        "key": "alt+1",
         "command": "actions.find",
         "when": "editorFocus || editorIsOpen"
     },
