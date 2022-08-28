@@ -813,7 +813,7 @@
         "when": "editorFocus || editorIsOpen"
     },
     {
-        "key": "alt+f",
+        "key": "ctrl+o ctrl+p",
         "command": "editor.action.showHover",
         "when": "editorTextFocus"
     },
@@ -821,5 +821,15 @@
         "key": "ctrl+k ctrl+i",
         "command": "-editor.action.showHover",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_2",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
     },
 ]
