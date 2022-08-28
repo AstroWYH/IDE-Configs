@@ -5,7 +5,7 @@
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4 }",
     "git.ignoreMissingGitWarning": true,
     "editor.fontLigatures": true,
-    "editor.lineHeight": 35,
+    "editor.lineHeight": 37,
     "[json]": {
         "editor.quickSuggestions": {
             "strings": true
@@ -225,12 +225,11 @@
     "workbench.colorTheme": "Quiet Light",
     "editor.minimap.enabled": false,
     "search.mode": "reuseEditor",
-    "glsllint.glslangValidatorPath": "D:\\Glslang\\glslang-master-windows-x64-Release\\bin\\glslangValidator.exe",
+    "glsllint.glslangValidatorPath": "D:\\Glslang\\bin\\glslangValidator.exe",
     "files.autoSave": "afterDelay",
-    "editor.hover.sticky": false,
-    "editor.hover.enabled": false,
+    // "editor.hover.sticky": false,
+    "editor.hover.enabled": true,
     "RainbowBrackets.depreciation-notice": false,
-    "RainbowBrackets.showBracketsInGutter": true,
     "codestream.serverUrl": "https://git.jiigan.com",
     "codestream.email": "m-astrowang@jiigan.com",
     "codestream.disableStrictSSL": true,
@@ -266,9 +265,6 @@
     "gitlens.views.commits.files.layout": "tree",
     "gitlens.views.formats.commits.label": "${message}",
     "editor.detectIndentation": false,
-    // "terminal.integrated.fontSize": 16,
-    // "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack",
-    "window.zoomLevel": -2,
     // "launch": {
     //     "configurations": [
     //         "cwd": "${fileDirname}"
@@ -297,7 +293,7 @@
         "editor.selectionHighlightBackground": "#FFC2E0",
         // "editor.inactiveSelectionBackground": "#f1f1a4",
         // "editor.selectionBackground": "#C7EDCC",    //選取字色 'you can set other color'
-        "editor.findMatchBackground": "#f1f1a4",  //搜索選取字色 'you can set other color' FFC2E0 是经典搜索粉色
+        "editor.findMatchBackground": "#f1f1a4",  //搜索選取字色 'you can set other color' FFC2E0 粉色 FFFF96 黄色 f1f1a4 淡黄
         // "editor.selectionHighlightBackground": "#000000", //選取字改透明色  'required important'
         // "editor.findMatchHighlightBackground": "#000000", //搜索選取字改透明色 'required important'
         // "editor.wordHighlightBackground": "#000000",  //全文相同選取字改透明色 'required important'
@@ -363,8 +359,14 @@
         // "editor.selectionHighlight": false,
         "copyOnSelect.copyOnMouseSelection": true,
         "editor.selectionHighlight": false,
-        "bazel.buildifierExecutable": "D:\\Bazel\\bazel.exe",
+        "bazel.buildifierExecutable": "D:\\Bazel\\buildifier.exe",
+        "bazel.executable": "D:\\Bazel\\bazel.exe",
+        "cmake.autoSelectActiveFolder": false,
+        "security.workspace.trust.enabled": false,
+        "window.zoomLevel": -2,
+
         // "editor.occurrencesHighlight": false,
         // "highlight-icemode.borderColor": "", //default ''
         // "highlight-icemode.backgroundColor": "", //default ''
+        // "EnglishChineseDictionary.enableHover":true,
 }
