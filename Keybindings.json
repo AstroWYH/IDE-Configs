@@ -41,7 +41,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "f4",
+        "key": "3",
         "command": "workbench.action.terminal.findNext",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
@@ -269,7 +269,7 @@
         "when": "debugState == 'running'"
     },
     {
-        "key": "ctrl+p ctrl+oem_4",
+        "key": "2",
         "command": "workbench.action.terminal.findPrevious",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
@@ -405,7 +405,7 @@
         "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
     },
     {
-        "key": "alt+s",
+        "key": "ctrl+oem_6 ctrl+oem_4",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
     },
@@ -823,7 +823,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+f",
+        "key": "ctrl+2",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -831,5 +831,35 @@
         "key": "ctrl+oem_2",
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "2",
+        "command": "workbench.action.terminal.findPrevious",
+        "when": "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported"
+    },
+    {
+        "key": "enter",
+        "command": "-workbench.action.terminal.findPrevious",
+        "when": "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported"
+    },
+    {
+        "key": "3",
+        "command": "workbench.action.terminal.findNext",
+        "when": "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-workbench.action.terminal.findNext",
+        "when": "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported"
+    },
+    {
+        "key": "alt+z",
+        "command": "workbench.action.terminal.toggleFindCaseSensitive",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+c",
+        "command": "-workbench.action.terminal.toggleFindCaseSensitive",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
 ]
