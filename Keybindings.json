@@ -505,7 +505,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+1",
+        "key": "alt+2",
         "command": "actions.find",
         "when": "editorFocus || editorIsOpen"
     },
@@ -861,5 +861,13 @@
         "key": "alt+c",
         "command": "-workbench.action.terminal.toggleFindCaseSensitive",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "editor.action.clipboardCutAction"
+    },
+    {
+        "key": "shift+delete",
+        "command": "-editor.action.clipboardCutAction"
     },
 ]
