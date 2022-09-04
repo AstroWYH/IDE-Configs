@@ -1,11 +1,11 @@
 {
     "C_Cpp.clang_format_sortIncludes": true,
-    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cppStandard": "c++11",
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4 }",
     "git.ignoreMissingGitWarning": true,
     "editor.fontLigatures": true,
-    "editor.lineHeight": 37,
+    "editor.lineHeight": 29,
     "[json]": {
         "editor.quickSuggestions": {
             "strings": true
@@ -35,7 +35,7 @@
     "json.schemas": [
     
     ],
-    "editor.fontFamily": "monacob",
+    "editor.fontFamily": "Fira Code, 微软雅黑",
     "extensions.ignoreRecommendations": true,
     "bookmarks.wrapNavigation": false,
     "bookmarks.showNoMoreBookmarksWarning": false,
@@ -128,7 +128,7 @@
         "git-rebase-todo": "default"
     },
     "terminal.integrated.scrollback": 3000,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "outline.problems.badges": false,
@@ -203,7 +203,7 @@
         "suppressGitMissingWarning": true
     },
     "files.autoGuessEncoding": true,
-    "editor.fontSize": 23,
+    "editor.fontSize": 19.5,
     "synthwave84.brightness": 0,
     "synthwave84.disableGlow": true,
     "oneDarkPro.bold": true,
@@ -269,19 +269,25 @@
     //         "cwd": "${fileDirname}"
     //     ]
     // }
-    "terminal.integrated.defaultProfile.windows": "GitBash",
+
     "terminal.integrated.profiles.windows": {
-        "GitBash": {
-            "path": "D:\\Git\\Git\\bin\\bash.exe"
+
+        // "path": "D:\\Git\\etc\\profile.d\\aliases.sh",
+        "Git-Bash": {
+            "path": "D:\\Git\\bin\\bash.exe"
         },
     },
+    "terminal.integrated.defaultProfile.windows": "Git-Bash",
 
-    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontSize": 18,
     "workbench.colorCustomizations": {
         "[Quiet Light]": {
             "editor.background": "#C7EDCC",
             "sideBar.background": "#C7EDCC",
             "activityBar.background": "#C7EDCC",
+            "peekViewEditor.background": "#C7EDCC",
+            "peekViewTitle.background": "#C7EDCC",
+            "peekViewResult.background": "#C7EDCC",
         },
         // 设置用户选中代码段的颜色 
         // "editor.selectionBackground": "#C7C7C7",
@@ -361,8 +367,25 @@
         "bazel.buildifierExecutable": "D:\\Bazel\\buildifier.exe",
         "bazel.executable": "D:\\Bazel\\bazel.exe",
         "cmake.autoSelectActiveFolder": false,
-        "security.workspace.trust.enabled": false,
-        "window.zoomLevel": -2,
+        "terminal.external.windowsExec": "D:\\Git\\bin\\bash.exe",
+        "terminal.integrated.automationProfile.windows": {
+        
+        },
+        "editor.codeLensFontFamily": "monacob",
+        "window.zoomLevel": -1,
+        "C_Cpp.default.includePath": [
+            "G:/work/SDK"
+        ],
+        "C_Cpp.intelliSenseEngineFallback": "Enabled",
+        // "terminal.external.windowsExec": "D:\\Git\\bin\\bash.exe --login -i",
+        // // "terminal.integrated.shell.windows":"D:\\Git\\bin\\bash.exe --login -i",
+
+        // "terminal.integrated.profiles.windows": {
+        //     "gitBash": {
+        //         "path": "D:\\Git\\bin\\bash.exe --login -i",//这里是的的bash路径
+        //     }
+        //     },
+        //     "terminal.integrated.defaultProfile.windows": "gitBash"
 
         // "editor.occurrencesHighlight": false,
         // "highlight-icemode.borderColor": "", //default ''
