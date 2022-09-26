@@ -6,7 +6,7 @@
     "git.ignoreMissingGitWarning": true,
     "editor.fontLigatures": true,
     "editor.lineHeight": 29,
-    "[json]": {
+    "[json]": { 
         "editor.quickSuggestions": {
             "strings": true
         },
