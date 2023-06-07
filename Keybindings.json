@@ -89,7 +89,7 @@
         "command": "-highlight.selectedWords"
     },
     {
-        "key": "shift+oem_3",
+        "key": "ctrl+oem_3",
         "command": "highlight.clearWords"
     },
     {
@@ -881,7 +881,7 @@
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
     },
     {
-        "key": "ctrl+l",
+        "key": "ctrl+t",
         "command": "editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
@@ -899,5 +899,25 @@
         "key": "shift+alt+f",
         "command": "-editor.action.formatDocument.none",
         "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "f1",
+        "command": "cppref.open",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-cppref.open",
+        "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+y",
+      "command": "editor.action.formatSelection",
+      "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+k ctrl+f",
+      "command": "-editor.action.formatSelection",
+      "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
     },
 ]
