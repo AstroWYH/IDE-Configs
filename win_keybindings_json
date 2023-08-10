@@ -387,7 +387,7 @@
         "command": "workbench.action.terminal.resizePaneDown"
     },
     {
-        "key": "alt+w",
+        "key": "ctrl+w",
         "command": "workbench.action.togglePanel"
     },
     {
@@ -447,7 +447,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected && !terminalFindVisible || terminalFocus && terminalProcessSupported && terminalTextSelected && !terminalFindVisible"
     },
     {
-        "key": "ctrl+w",
+        "key": "ctrl+oem_4 ctrl+oem_6",
         "command": "workbench.action.findInFiles"
     },
     {
