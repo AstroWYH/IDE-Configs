@@ -303,7 +303,7 @@
         "command": "workbench.action.terminal.kill"
     },
     {
-        "key": "ctrl+t",
+        "key": "ctrl+oem_4 ctrl+oem_6",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -423,7 +423,7 @@
         "command": "workbench.action.terminal.switchTerminal"
     },
     {
-        "key": "ctrl+t",
+        "key": "ctrl+oem_4 ctrl+oem_6",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
@@ -679,7 +679,7 @@
         "command": "extension.翻译选中文本"
     },
     {
-        "key": "ctrl+p ctrl+o",
+        "key": "ctrl+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
@@ -919,5 +919,25 @@
       "key": "ctrl+k ctrl+f",
       "command": "-editor.action.formatSelection",
       "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
     },
 ]
