@@ -109,8 +109,7 @@
     "gitlens.statusBar.enabled": false,
     "gitlens.currentLine.format": "${author}, ${date}${message}",
     "gitlens.currentLine.scrollable": false,
-    "C_Cpp.clang_format_fallbackStyle": "Google",
-    "C_Cpp.clang_format_style": "Google",
+    "C_Cpp.clang_format_style": "Visual Studio",
     "RainbowBrackets.depreciation-notice": false,
     "explorer.confirmDragAndDrop": false,
     "baidu.comate.username": "wangyuhang08",
@@ -147,11 +146,15 @@
         "graphql": true
     },
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "xaver.clang-format"
     },
     "editor.tabSize": 2,
     // "files.encoding": "gb2312",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.fontFamily": "Cascadia Code",
     "window.zoomLevel": 1,
+    "editor.defaultFormatter": "xaver.clang-format",
+    "explorer.confirmDelete": false,
+    "clang-format.executable": "D:\\EpicGames\\VS_Ext\\clang-format.exe",
+    "clang-format.style": "Microsoft",
 }
