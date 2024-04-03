@@ -1,0 +1,185 @@
+{
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "[Quiet Light]": {
+            "editor.background": "#C7EDCC",
+            "sideBar.background": "#C7EDCC",
+            "activityBar.background": "#C7EDCC",
+            "peekViewEditor.background": "#C7EDCC",
+            "peekViewTitle.background": "#C7EDCC",
+            "peekViewResult.background": "#C7EDCC",
+            "panel.background": "#C7EDCC",
+        },
+        // "editor.findMatchHighlightBackground": "#DAA520",
+        // "editor.findRangeHighlightBackground": "#DAA520",
+        // "editor.selectionHighlightBackground": "#DAA520",
+        // "editor.inactiveSelectionBackground": "#DAA520",
+        // "editor.findMatchBackground": "#DAA520",
+        // "editor.selectionBackground": "#ff0000"
+        "editor.wordHighlightTextBackground": "#FFFF96",
+        "editor.wordHighlightTextBackgroundDelay":"0"
+    },
+    "editor.tokenColorCustomizations": {
+        // "types": "#24a291",
+        // "comments": "#448C27",
+        // "functions": "#F16983",
+        // "keywords": "#4B69C6",
+        // "numbers": "#5c9bd5",
+        // "strings": "#e69138",
+        // "variables": "#133366",
+        // "meta":"#7A3E9D",
+        // "parameters": "#7A3E9D",
+        // "classes": "#7A3E9D",
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "[Quiet Light]": {
+            "enabled": true,
+            "rules": {
+                "type":  "#24a291",
+                "namespace": "#8da549",
+                "function": "#F16983",
+                "variable": "#133366",
+                "number": "#9690ae",
+                "string": {
+                    "foreground": "#e69138",
+                    // "italic": true
+                },
+                "comment": {
+                    "foreground": "#448C27",
+                    "fontStyle": "italic"
+                },
+                "variable.readonly.defaultLibrary": "#A89F9B",
+                "macro": "#c9919c",
+                "keyword": "#4B69C6",
+                "operator": "#a42397",
+                "type.modification": "#00897B",
+                "punctuation": "#A1887F"
+            }
+        }
+    },
+    "highlight.configuration.colors": [
+        {
+            "light": "#A3E7FF",
+            "dark": "#FF9933"
+        },
+        {
+            "light": "#FFCEB3",
+            "dark": "#85C1E9"
+        },
+        {
+            "light": "#7CCCC1",
+            "dark": "#AF7AC5"
+        },
+        {
+            "light": "#BFD0F5",
+            "dark": "#48C9B0"
+        },
+        {
+            "light": "#75D19C",
+            "dark": "#52BE80"
+        },
+        {
+            "light": "#EFCFFF",
+            "dark": "#F4D03F"
+        },
+        {
+            "light": "#F3F3F3",
+            "dark": "#CD6155"
+        }
+    ],
+    "editor.fontSize": 15.5,
+    "editor.cursorBlinking": "solid",
+    "extensions.ignoreRecommendations": true,
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "gitlens.hovers.enabled": false,
+    "editor.largeFileOptimizations": false,
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "gitlens.terminalLinks.enabled": false,
+    "gitlens.menus": false,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.copyOnSelection": true,
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.default.cppStandard": "c++17",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.format": "${author}, ${date}",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.currentLine.format": "${author}, ${date}${message}",
+    "gitlens.currentLine.scrollable": false,
+    "C_Cpp.clang_format_style": "Visual Studio",
+    "RainbowBrackets.depreciation-notice": false,
+    "explorer.confirmDragAndDrop": false,
+    "baidu.comate.username": "wangyuhang08",
+    "baidu.comate.langSuggestion": {
+        "all": true,
+        "cpp": true,
+        "css": true,
+        "go": true,
+        "html": true,
+        "java": true,
+        "javascript": true,
+        "less": true,
+        "perl": true,
+        "php": true,
+        "python": true,
+        "ruby": true,
+        "shell": true,
+        "swift": true,
+        "typescript": true,
+        "others": true,
+        "objectivec": true,
+        "rust": true,
+        "kotlin": true,
+        "swan": true,
+        "san": true,
+        "lua": true,
+        "vue": true,
+        "sass": true,
+        "scss": true,
+        "stylus": true,
+        "pug": true,
+        "vhdl": true,
+        "mermaid": true,
+        "graphql": true
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    // "files.encoding": "gb2312",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "Cascadia Code",
+    "window.zoomLevel": 1,
+    "editor.defaultFormatter": "xaver.clang-format",
+    "explorer.confirmDelete": false,
+    "clang-format.executable": "D:\\EpicGames\\VS_Ext\\clang-format.exe",
+    "clang-format.style": "Microsoft",
+    "editor.wordWrap": "on",
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.nodePath": "D:\\NodeJs\\install\\node.exe",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "d:\\unreal\\project\\LeetCode-Notes",
+    "git.openRepositoryInParentFolders": "never",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.commandShortcut": false,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "vim.vimrc.path": "C:\\Users\\Administrator\\.vimrc",
+    "vim.vimrc.enable": true,
+    "vim.leader" : ";",
+    "vim.ignorecase": false,
+    "vim.easymotion": true,
+    "vscode-easymotion.allowJumpingToWordlessLines": true,
+    "vscode-easymotion.styles": {
+
+    },
+    // "vim.otherModesKeyBindingsNonRecursive": [
+    //     {
+    //         "before": ["s"],
+    //         "after": ["leader", "leader", "s"]
+    //     }]
+}
