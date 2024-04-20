@@ -15,8 +15,10 @@ nnoremap J 7h
 nnoremap L 7l
 nnoremap <C-j> 7h
 nnoremap <C-l> 7l
-nnoremap <C-K> 7<C-e>
-nnoremap <C-I> 7<C-y>
+nnoremap <C-k> 7<C-e>
+nnoremap <C-i> 7<C-y>
+" nnoremap <C-]> <C-e>
+" nnoremap <C-[> <C-y>
 nnoremap ! ^
 nnoremap @ $
 nnoremap d! d^
@@ -44,6 +46,8 @@ vnoremap dj dh
 vnoremap cj ch
 vnoremap dj dh
 vnoremap cj ch
+" vnoremap <C-]> <C-e>
+" vnoremap <C-[> <C-y>
 
 " wyh
 " wyh
