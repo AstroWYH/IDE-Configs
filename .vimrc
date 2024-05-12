@@ -17,13 +17,11 @@ nnoremap <C-j> 7h
 nnoremap <C-l> 7l
 nnoremap <C-k> 7<C-e>
 nnoremap <C-i> 7<C-y>
-" nnoremap <C-]> <C-e>
-" nnoremap <C-[> <C-y>
 nnoremap ! ^
 nnoremap @ $
 nnoremap d! d^
 nnoremap d@ d$
-nnoremap $ *
+nnoremap <C-n> # *
 nnoremap dj dh
 nnoremap cj ch
 
@@ -41,13 +39,11 @@ vnoremap <C-K> 7<C-e>
 vnoremap <C-I> 7<C-y>
 vnoremap ! ^
 vnoremap @ $
-vnoremap $ *
+vnoremap <C-n> # *
 vnoremap dj dh
 vnoremap cj ch
 vnoremap dj dh
 vnoremap cj ch
-" vnoremap <C-]> <C-e>
-" vnoremap <C-[> <C-y>
 
 " wyh
 " wyh
