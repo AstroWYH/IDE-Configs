@@ -1,0 +1,3 @@
+--target=x86_64-w64-mingw32
+--sysroot=C:/nightgamer/llvmmingw/x86_64-14.2.0-release-win32-seh-msvcrt-rt_v12-rev1/mingw64
+--gcc-toolchain=C:/nightgamer/llvmmingw/x86_64-14.2.0-release-win32-seh-msvcrt-rt_v12-rev1/mingw64
