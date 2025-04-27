@@ -94,29 +94,29 @@
     //         "dark": "#CD6155"
     //     }
     // ],
-"highlight.configuration.colors": [
-    {
-        "dark": "#D35400"  // 深锈橙色 - 比标准橙更深沉
-    },
-    {
-        "dark": "#1E8449"  // 森林绿 - 非常深的绿色
-    },
-    {
-        "dark": "#6C3483"  // 深茄紫色 - 比普通紫更深
-    },
-    {
-        "dark": "#1F618D"  // 深海蓝 - 深而饱和的蓝色
-    },
-    {
-        "dark": "#922B21"  // 深砖红色 - 比标准红更暗
-    },
-    {
-        "dark": "#117864"  // 深青绿色 - 非常暗的蓝绿色
-    },
-    {
-        "dark": "#7D6608"  // 深橄榄色 - 介于棕与绿之间
-    }
-],
+    "highlight.configuration.colors": [
+        {
+            "dark": "#1E8449"  // 森林绿 - 非常深的绿色
+        },
+        {
+            "dark": "#6C3483"  // 深茄紫色 - 比普通紫更深
+        },
+        {
+            "dark": "#1F618D"  // 深海蓝 - 深而饱和的蓝色
+        },
+        {
+            "dark": "#922B21"  // 深砖红色 - 比标准红更暗
+        },
+        {
+            "dark": "#117864"  // 深青绿色 - 非常暗的蓝绿色
+        },
+        {
+            "dark": "#7D6608"  // 深橄榄色 - 介于棕与绿之间
+        },
+        {
+            "dark": "#D35400"  // 深锈橙色 - 比标准橙更深沉
+        },
+    ],
     "editor.cursorBlinking": "solid",
     "extensions.ignoreRecommendations": true,
     "gitlens.hovers.enabled": false,
