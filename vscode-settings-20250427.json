@@ -58,7 +58,7 @@
         },
         "[Dracula Theme]": {
             "textMateRules": [
-                { "scope": "variable.other.lua", "settings": { "foreground": "#4c79ad"}},
+                { "scope": "variable.other.lua", "settings": { "foreground": "#8db7e7"}},
                 // { "scope": "variable", "settings": { "foreground": "#f7fbfa"}},
                 { "scope": "variable.other.property.gdscript", "settings": { "foreground": "#dca450"}},
             ],
@@ -94,29 +94,29 @@
     //         "dark": "#CD6155"
     //     }
     // ],
-    "highlight.configuration.colors": [
-        {
-            "dark": "#5DA9E9" // 柔和的科技蓝
-        },
-        {
-            "dark": "#6ECF8E" // 清新的薄荷绿
-        },
-        {
-            "dark": "#D67AD2" // 适度的品红
-        },
-        {
-            "dark": "#FF9F4B" // 温暖的橙黄
-        },
-        {
-            "dark": "#57C7C7" // 冷静的蓝绿色
-        },
-        {
-            "dark": "#F07178" // 温和的珊瑚红
-        },
-        {
-            "dark": "#CBA6F7" // 柔和的薰衣草紫
-        }
-    ],
+"highlight.configuration.colors": [
+    {
+        "dark": "#D35400"  // 深锈橙色 - 比标准橙更深沉
+    },
+    {
+        "dark": "#1E8449"  // 森林绿 - 非常深的绿色
+    },
+    {
+        "dark": "#6C3483"  // 深茄紫色 - 比普通紫更深
+    },
+    {
+        "dark": "#1F618D"  // 深海蓝 - 深而饱和的蓝色
+    },
+    {
+        "dark": "#922B21"  // 深砖红色 - 比标准红更暗
+    },
+    {
+        "dark": "#117864"  // 深青绿色 - 非常暗的蓝绿色
+    },
+    {
+        "dark": "#7D6608"  // 深橄榄色 - 介于棕与绿之间
+    }
+],
     "editor.cursorBlinking": "solid",
     "extensions.ignoreRecommendations": true,
     "gitlens.hovers.enabled": false,
