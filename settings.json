@@ -1,58 +1,21 @@
 {
-    "C_Cpp.clang_format_sortIncludes": true,
-    "C_Cpp.default.cppStandard": "c++20",
-    "C_Cpp.default.cStandard": "c17",
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: GNU, UseTab: Never, IndentWidth: 4 }",
-    "clang-format.executable": "D:\\Python310\\Scripts\\clang-format.exe",
-    "git.ignoreMissingGitWarning": true,
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 29,
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "[Quiet Light]": {
+            "editor.background": "#DEFBE2",
+            "sideBar.background": "#DEFBE2",
+            "activityBar.background": "#DEFBE2",
+            "peekViewEditor.background": "#DEFBE2",
+            "peekViewTitle.background": "#DEFBE2",
+            "peekViewResult.background": "#DEFBE2",
+            "panel.background": "#DEFBE2"
         },
-        "editor.suggest.insertMode": "replace"
+        "editor.wordHighlightTextBackground": "#FFFF96",
+        "editor.wordHighlightTextBackgroundDelay": "0",
+        "editorCursor.foreground": "#1be7eb",
+        "editorCursor.background": "#000000"
     },
-    "settingsSync.ignoredExtensions": [
-    ],
-//     "workbench.colorCustomizations": {
-//     "[Quiet Light]": {
-//         "editor.background": "#C7EDCC",   
-//         "sideBar.background": "#C7EDCC",
-//         "activityBar.background": "#C7EDCC",       
-//         },
-//     // 设置用户选中代码段的颜色 
-//     // 搜索匹配的背景色
-// /*     "editor.findMatchBackground": "#FFC2E0",
-//     "editor.findMatchHighlightBackground": "#F7C6D9", */
-//     // "editor.findRangeHighlightBackground": "#ff9900"
-//     },
-    // "workbench.preferredDarkColorTheme": "SynthWave '84",
-    // "editor.fontWeight": "450",
-    "editor.find.loop": false,
-    "gnuGlobal.globalExecutable": "C:\\global\\bin\\global.exe",
-    "gnuGlobal.gtagsExecutable": "C:\\global\\bin\\gtags.exe",
-    "gnuGlobal.autoUpdate": "Disabled",
-    "json.schemas": [
-    
-    ],
-    "editor.fontFamily": "consolas, 微软雅黑",
-    "extensions.ignoreRecommendations": true,
-    "bookmarks.wrapNavigation": false,
-    "bookmarks.showNoMoreBookmarksWarning": false,
-    "highlight.configuration.ignoreCase": false,
-    "bookmarks.navigateThroughAllFiles": false,
-    "tabnine.experimentalAutoImports": true,
-    // "C_Cpp.intelliSenseEngine": "Disabled",
-    // "C_Cpp.intelliSenseEngine": "Default",
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.largeFileOptimizations": false,
-    "bookmarks.sideBar.expanded": true,
     "highlight.configuration.colors": [
-        // {
-        //     "light": "#ffff80",
-        //     "dark": "#F5B041"
-        // },
         {
             "light": "#A3E7FF",
             "dark": "#FF9933"
@@ -82,346 +45,500 @@
             "dark": "#CD6155"
         }
     ],
-/*     "highlight.configuration.colors": [
-            {
-                "light": "#375830",
-                "dark": "#375830"
-            },
-            {
-                "light": "#5f3c23",
-                "dark": "#5f3c23"
-            },
-            {
-                "light": "#7d5886",
-                "dark": "#7d5886"
-            },
-            {
-                "light": "#2468a2",
-                "dark": "#2468a2"
-            },
-            {
-                "light": "#733a31",
-                "dark": "#733a31"
-            },
-            {
-                "light": "#b3424a",
-                "dark": "#b3424a"
-            },
-            {
-                "light": "#4d4f36",
-                "dark": "#4d4f36"
-            },
-            {
-                "light": "#4f5555",
-                "dark": "#4f5555"
-            }
-        ], */
-    "remote.SSH.remotePlatform": {
-        "Hanbabang": "linux",
-        "127.0.0.1": "linux"
-    },
-    "cmake.configureOnOpen": true,
-    "remoteX11.SSH.privateKey": "C:\\Users\\m-astrowang\\.ssh\\id_rsa",
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.fontFamily": "monacob",
+    "editor.cursorBlinking": "solid",
+    "extensions.ignoreRecommendations": true,
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "gitlens.hovers.enabled": false,
+    "editor.largeFileOptimizations": false,
     "workbench.editorAssociations": {
-        "*.cpp": "default",
         "git-rebase-todo": "default"
     },
-    "terminal.integrated.scrollback": 3000,
-    // "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "outline.problems.badges": false,
-    "outline.problems.colors": false,
-    "outline.problems.enabled": false,
-    "outline.showConstants": false,
-    "outline.showBooleans": false,
-    "outline.showArrays": false,
-    "outline.showVariables": false,
-    "outline.showTypeParameters": false,
-    "outline.showStructs": false,
-    "outline.showStrings": false,
-    "outline.showProperties": false,
-    "outline.showPackages": false,
-    "outline.showOperators": false,
-    "outline.showObjects": false,
-    "outline.showNumbers": false,
-    "outline.showNull": false,
-    "outline.showModules": false,
-    "outline.showKeys": false,
-    "outline.showFiles": false,
-    "outline.showFields": false,
-    "outline.showEvents": false,
-    "outline.showEnums": false,
-    "outline.showEnumMembers": false,
-    "outline.showClasses": false,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "gitlens.views.commits.files.compact": false,
-    "gitlens.views.repositories.showBranchComparison": false,
-    "gitlens.views.repositories.showUpstreamStatus": false,
-    "gitlens.views.repositories.pullRequests.enabled": false,
-    "gitlens.views.repositories.autoRefresh": false,
-    "gitlens.views.repositories.autoReveal": false,
-    "gitlens.views.repositories.avatars": false,
-    "gitlens.views.repositories.showCommits": false,
-    "gitlens.views.repositories.showBranches": false,
-    "gitlens.views.repositories.showRemotes": false,
-    "gitlens.views.repositories.showStashes": false,
-    "gitlens.views.repositories.showContributors": false,
-    "gitlens.views.repositories.showTags": false,
-    "gitlens.views.repositories.files.compact": false,
-    "gitlens.views.fileHistory.files.compact": false,
-    "gitlens.views.fileHistory.avatars": false,
-    "gitlens.views.branches.showBranchComparison": false,
-    "gitlens.views.branches.pullRequests.enabled": false,
-    "gitlens.views.branches.files.compact": false,
-    "gitlens.views.branches.avatars": false,
-    "gitlens.views.remotes.pullRequests.enabled": false,
-    "gitlens.views.remotes.files.compact": false,
-    "gitlens.views.remotes.avatars": false,
-    "gitlens.views.stashes.files.compact": false,
-    "gitlens.views.tags.files.compact": false,
-    "gitlens.views.tags.avatars": false,
-    "gitlens.views.contributors.pullRequests.enabled": false,
-    "gitlens.views.contributors.files.compact": false,
-    "gitlens.views.contributors.avatars": false,
-    "gitlens.views.searchAndCompare.pullRequests.enabled": false,
-    "gitlens.views.searchAndCompare.files.compact": false,
-    "gitlens.views.searchAndCompare.avatars": false,
-    "gitlens.blame.compact": false,
-    "gitlens.blame.highlight.enabled": false,
-    "gitlens.blame.heatmap.enabled": false,
-    "gitlens.blame.avatars": false,
-    "gitlens.changes.locations": [],
-    "gitlens.heatmap.locations": [],
-    "gitlens.advanced.messages": {
-        "suppressGitMissingWarning": true
-    },
-    "files.autoGuessEncoding": true,
-    "editor.fontSize": 25,
-    "synthwave84.brightness": 0,
-    "synthwave84.disableGlow": true,
-    "oneDarkPro.bold": true,
-    "leetcode.endpoint": "leetcode-cn",
-    "leetcode.hint.configWebviewMarkdown": false,
-    "leetcode.workspaceFolder": "G:\\notes\\vscode-leetcode",
-    "leetcode.nodePath": "D:\\Nodejs\\node.exe",
-    "leetcode.hint.commentDescription": false,
-    "leetcode.defaultLanguage": "cpp",
-    "picgo.picBed.github.branch": "master",
-    "picgo.picBed.current": "github",
-    "picgo.picBed.github.path": "Pics/",
-    "picgo.picBed.github.repo": "AstroWYH/All-Pictures",
-    "picgo.picBed.github.token": "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",
-    "picgo.picBed.github.customUrl": "https://raw.githubusercontent.com/AstroWYH/All-Pictures@main",
-    // "leetcode.useWsl": true,
-    "editor.cursorBlinking": "solid",
-    "C_Cpp.dimInactiveRegions": false,
-    "search.mode": "reuseEditor",
-    "glsllint.glslangValidatorPath": "D:\\Glslang\\bin\\glslangValidator.exe",
-    "files.autoSave": "afterDelay",
+    "gitlens.terminalLinks.enabled": false,
+    "gitlens.menus": false,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.copyOnSelection": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.default.cppStandard": "c++23",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.format": "${author}, ${date}",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.currentLine.format": "${author}, ${date}${message}",
+    "gitlens.currentLine.scrollable": false,
+    "C_Cpp.clang_format_style": "Google",
     "RainbowBrackets.depreciation-notice": false,
-    "codestream.serverUrl": "https://git.jiigan.com",
-    "codestream.email": "m-astrowang@jiigan.com",
-    "codestream.disableStrictSSL": true,
-    "gitlab.customQueries": [
+    "explorer.confirmDragAndDrop": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "fira code",
+    "window.zoomLevel": 1,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "explorer.confirmDelete": false,
+    "clang-format.executable": "D:\\EpicGames\\VS_Ext\\clang-format.exe",
+    "clang-format.style": "Microsoft",
+    "editor.wordWrap": "on",
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.nodePath": "D:\\NodeJs\\install\\node.exe",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "d:\\unreal\\project\\LeetCode-Notes",
+    "git.openRepositoryInParentFolders": "never",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.commandShortcut": false,
+    "terminal.integrated.fontSize": 10,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "vim.vimrc.path": "C:\\Users\\Administrator\\.vimrc",
+    "vim.vimrc.enable": true,
+    "vim.leader": ";",
+    "vim.ignorecase": false,
+    "vim.easymotion": false,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vscode-easymotion.allowJumpingToWordlessLines": true,
+    "vscode-easymotion.styles": {},
+    "clangd.path": "E:\\clangd-win\\clangd-windows-20.1.0\\clangd_20.1.0\\bin\\clangd.exe",
+    "editor.fontSize": 15,
+    "outline.showArrays": false,
+    "outline.showBooleans": false,
+    "outline.showConstants": false,
+    "outline.showEnumMembers": false,
+    "outline.showEnums": false,
+    "outline.showEvents": false,
+    "outline.showFields": false,
+    "outline.showFiles": false,
+    "outline.showKeys": false,
+    "outline.showNull": false,
+    "outline.showNumbers": false,
+    "outline.showObjects": false,
+    "outline.showOperators": false,
+    "outline.showPackages": false,
+    "outline.showProperties": false,
+    "outline.showStrings": false,
+    "outline.showTypeParameters": false,
+    "outline.showVariables": false,
+    "notebook.outline.showCodeCellSymbols": false,
+    "outline.showModules": false,
+    "notebook.outline.showMarkdownHeadersOnly": false,
+    "outline.problems.enabled": false,
+    "outline.problems.colors": false,
+    "outline.problems.badges": false,
+    "workbench.colorTheme": "Quiet Light",
+    // ==================== C# 语义高亮配置 ====================
+    //     "editor.tokenColorCustomizations": {
+    //     "[Quiet Light]": {
+    //         "textMateRules": [
+    //             // 覆盖所有 C# 属性
+    //             {
+    //                 "scope": "variable.other.object.cs",
+    //                 "settings": {
+    //                     "foreground": "#6E9297"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.variable.field.cs",
+    //                 "settings": {
+    //                     "foreground": "#6E9297"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "variable.other.readwrite.cs",
+    //                 "settings": {
+    //                     "foreground": "#6E9297"
+    //                 }
+    //             }, 
+    //             {
+    //                 "scope": "entity.name.function.cs",
+    //                 "settings": {
+    //                     "foreground": "#6E9297"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.variable.property.cs",
+    //                 "settings": {
+    //                     "foreground": "#97A054"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "variable.other.object.property.cs",
+    //                 "settings": {
+    //                     "foreground": "#97A054"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.variable.local.cs",
+    //                 "settings": {
+    //                     "foreground": "#8490D5"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "storage.modifier.private.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "storage.modifier.public.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "storage.modifier.protected.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "storage.modifier.async.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "keyword.operator.expression.await.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "keyword.type.void.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "keyword.control.flow.return.cs",
+    //                 "settings": {
+    //                     "foreground": "#6230B3"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.type.class",
+    //                 "settings": {
+    //                     "foreground": "#50C09C"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.type.struct",
+    //                 "settings": {
+    //                     "foreground": "#50C09C"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "variable.other.object.property.cs",
+    //                 "settings": {
+    //                     "foreground": "#97A054"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "variable.other.property",
+    //                 "settings": {
+    //                     "foreground": "#97A054"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.variable.local.cs",
+    //                 "settings": {
+    //                     "foreground": "#97A054"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.type",
+    //                 "settings": {
+    //                     "foreground": "#E07020"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.function.cs",
+    //                 "settings": {
+    //                     "foreground": "#eb6f8c"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "method",
+    //                 "settings": {
+    //                     "foreground": "#eb6f8c"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.function",
+    //                 "settings": {
+    //                     "foreground": "#eb6f8c"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.variable.enum-member.cs",
+    //                 "settings": {
+    //                     "foreground": "#366d80"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": "entity.name.variable.local.cs",
+    //                 "settings": {
+    //                     "foreground": "#8490D5"
+    //                 }
+    //             },
+    //         ]
+    //     }
+    // },
+    "[lua]": {
+        "editor.defaultFormatter": "yinfei.luahelper"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "godotTools.editorPath.godot3": "E:\\godot\\engine\\Godot_v3.6-stable_win64.exe\\Godot_v3.6-stable_win64.exe",
+    "files.associations": {
+        "*.log": "log"
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "highlight.configuration.ignoreCase": false,
+    "leetcode-problem-rating.workspaceFolder": "d:\\leetcode\\repo\\LeetCode-Notes",
+    "markdown.preview.fontFamily": "victor-mono",
+    "leetcode-problem-rating.hint.commandShortcut": false,
+    "leetcode-problem-rating.hint.configWebviewMarkdown": false,
+    "leetcode-problem-rating.defaultLanguage": "cpp",
+    "C_Cpp.configurationWarnings": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.codeAnalysis.clangTidy.codeAction.showDisable": false,
+    "leetcode-problem-rating.hint.commentDescription": false,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "editor.tabSize": 2,
+    "editor.scrollbar.horizontalScrollbarSize": 2,
+    "editor.scrollbar.verticalScrollbarSize": 2,
+    "editor.quickSuggestionsDelay": 0,
+    "C_Cpp.intelliSenseUpdateDelay": 500,
+    "leetcode-problem-rating.endpoint": "leetcode-cn",
+    "godotTools.editorPath.godot4": "",
+    "chat.commandCenter.enabled": false,
+    "metaGo.decoration.characters": "1, 2, 3, k, j, d, f, l, s, a, h, g, i, o, n, u, r, v, c, w",
+    "metaGo.decoration.additionalSingleCharCodeCharacters": "e, x, m, b, p, q, t, y, z",
+    "metaGo.decoration.fontFamily": "victor mono",
+    "clangd.arguments": [
+        "--background-index=true"
+    ],
+    "ctags-companion.readtagsGoToDefinitionCommand": "readtags -t E:\\zx\\tags -en",
+    "luahelper.colors.Global Field Color": "",
+    "luahelper.colors.Global Fun Color": "",
+    "luahelper.colors.Type(annotation) Color": "",
+    "syntax.highlightLanguages": [
+        "lua"
+    ],
+    "syntax.highlightTerms": [
+        "type",
+        "scope",
+        "function",
+        "variable",
+        "number",
+        "string",
+        "comment",
+        "constant",
+        "directive",
+        "control",
+        "operator",
+        "modifier",
+        "punctuation",
+        "parameter"
+    ],
+    "files.exclude": {
+        "**/Intermediate/**": true,
+        "**/.cache/**": true
+    },
+    "search.exclude": {
+        "**/Intermediate/**": true,
+        "**/.cache/**": true
+    },
+    "fzf-quick-open.initialWorkingDirectory": "E:\\zx",
+    "fzf-quick-open.ripgrepSearchStyle": "Ignore case",
+    "ripgrep.exe": "E:\\clangd-win\\ripgrep-14.1.0-x86_64-pc-windows-msvc\\ripgrep-14.1.0-x86_64-pc-windows-msvc\\ripgrep.ripgrep.exe",
+    "find-it-faster.general.searchCurrentWorkingDirectory": "never",
+    "find-it-faster.general.batTheme": "Sublime Snazzy",
+    "find-it-faster.general.restoreFocusTerminal": true,
+    "find-it-faster.general.searchWorkspaceFolders": false,
+    "find-it-faster.general.additionalSearchLocations": [
+        "E:\\zx\\ZhuxianClient\\Source",
+        "E:\\zx\\Engine\\Source",
+        "E:\\zx\\Engine\\Plugins"
+    ],
+    "find-it-faster.general.openFileInPreviewEditor": true,
+    "workbench.editor.enablePreview": false,
+    "editor.lineHeight": 1.5,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "editor.minimap.enabled": true,
+    "editorjumper.selectedIDE": "Rider",
+    "editorjumper.ideConfigurations": [
         {
-        "name": "merge_requests review by wyh",
-        "type": "merge_requests",
-        "scope": "assigned_to_me",
-        "noItemText": "There is no merge_requests assigned to wyh.",
-        "state": "all"
+            "name": "IDEA",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
         },
         {
-            "name": "merge_requests create by wyh",
-            "type": "merge_requests",
-            "scope": "created_by_me",
-            "noItemText": "There is no merge_requests create by wyh.",
-            "state": "all"
+            "name": "WebStorm",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
+        },
+        {
+            "name": "PyCharm",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
+        },
+        {
+            "name": "GoLand",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
+        },
+        {
+            "name": "CLion",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
+        },
+        {
+            "name": "PhpStorm",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
+        },
+        {
+            "name": "RubyMine",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
+        },
+        {
+            "name": "Rider",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": "d:\\rider\\JetBrains Rider 2025.2.3\\bin\\rider64.exe"
+        },
+        {
+            "name": "Android Studio",
+            "isCustom": false,
+            "hidden": false,
+            "commandPath": null
         }
     ],
-    "gitlens.currentLine.pullRequests.enabled": false,
-    "gitlens.currentLine.scrollable": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.views.commits.avatars": false,
-    "gitlens.menus": false,
-    "gitlens.mode.statusBar.enabled": false,
-    "gitlens.worktrees.defaultLocation": null,
-    "gitlens.views.worktrees.showBranchComparison": "branch",
-    "gitlens.views.worktrees.files.layout": "tree",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.views.commits.showBranchComparison": false,
-    "gitlens.views.commits.pullRequests.enabled": false,
-    "gitlens.views.commits.files.layout": "tree",
-    "gitlens.views.formats.commits.label": "${message}",
-    "editor.detectIndentation": false,
-    // "launch": {
-    //     "configurations": [
-    //         "cwd": "${fileDirname}"
-    //     ]
-    // }
+    "switch2idea.ideaPath": "D:\\rider\\JetBrains Rider 2025.2.3\\bin\\rider64.exe"
+        ,"search.searchEditor.defaultNumberOfContextLines": 0
+        // 1. 强制开启全局语义高亮
+        ,"editor.semanticHighlighting.enabled": true,
 
-    "terminal.integrated.profiles.windows": {
+        // 2. (关键) 告诉 C# 插件“我要增强型高亮”
+        // 如果你是用新版 C# Dev Kit，这个通常默认开启，但旧版或者某些环境下需要显式设置
+        "csharp.semanticHighlighting.enabled": true, 
 
-        // "path": "D:\\Git\\etc\\profile.d\\aliases.sh",
-        "Git-Bash": {
-            "path": "D:\\Git\\bin\\bash.exe"
-        },
-    },
-    "terminal.integrated.defaultProfile.windows": "Git-Bash",
-
-    "terminal.integrated.fontSize": 18,
-    "workbench.colorCustomizations": {
-        "[Quiet Light]": {
-            "editor.background": "#C7EDCC",
-            "sideBar.background": "#C7EDCC",
-            "activityBar.background": "#C7EDCC",
-            "peekViewEditor.background": "#C7EDCC",
-            "peekViewTitle.background": "#C7EDCC",
-            "peekViewResult.background": "#C7EDCC",
-            "panel.background": "#C7EDCC"
-        },
-        // 设置用户选中代码段的颜色 
-        // "editor.selectionBackground": "#C7C7C7",
-        // 搜索匹配的背景色
-        "editor.findMatchHighlightBackground": "#FFFF96",
-        // "editor.findRangeHighlightBackground": "#ff9900"
-        // "terminal.integrated.rightClickBehavior": "paste", //字体大小设置
-        "editor.selectionHighlightBackground": "#FFC2E0",
-        // "editor.inactiveSelectionBackground": "#f1f1a4",
-        // "editor.selectionBackground": "#C7EDCC",    //選取字色 'you can set other color'
-        "editor.findMatchBackground": "#f1f1a4",  //搜索選取字色 'you can set other color' FFC2E0 粉色 FFFF96 黄色 f1f1a4 淡黄
-        // "editor.selectionHighlightBackground": "#000000", //選取字改透明色  'required important'
-        // "editor.findMatchHighlightBackground": "#000000", //搜索選取字改透明色 'required important'
-        // "editor.wordHighlightBackground": "#000000",  //全文相同選取字改透明色 'required important'
-        // "editorBracketMatch.border": "#FF0000",   //括號的框線色 'you can set other color'
-        // "editorBracketMatch.background": "#0052cc",  //括號的背景色 'you can set other color'
-
-        "terminal.background": "#C7EDCC",
-        // "terminal.foreground": "#26e045",
-        // "terminalCursor.background": "#c32b2b",
-        // "terminalCursor.foreground": "#D8D8D8",
-        // "terminal.ansiBlack": "#181818",
-        // "terminal.ansiBlue": "#7CAFC2",
-        // "terminal.ansiBrightBlack": "#585858",
-        // "terminal.ansiBrightBlue": "#7CAFC2",
-        // "terminal.ansiBrightCyan": "#86C1B9",
-        // "terminal.ansiBrightGreen": "#A1B56C",
-        // "terminal.ansiBrightMagenta": "#BA8BAF",
-        // "terminal.ansiBrightRed": "#e30800",
-        // "terminal.ansiBrightWhite": "#F8F8F8",
-        // "terminal.ansiBrightYellow": "#F7CA88",
-        // "terminal.ansiCyan": "#2b68c3",
-        // "terminal.ansiGreen": "#e30800",
-        "terminal.ansiMagenta": "#66ccd9",
-        // "terminal.ansiRed": "#e30800",
-        // "terminal.ansiWhite": "#D8D8D8",
-        "terminal.ansiYellow": "#e300bd",
-        // "terminal.integrated.cursorBlinking": true,
-        // "terminal.integrated.lineHeight": 1.6,
-        // "terminal.integrated.letterSpacing": 0.1,
-        // "terminal.integrated.fontSize": 20,
-        // "terminal.integrated.rightClickBehavior": "paste", //字体大小设置
-        // "terminal.integrated.fontFamily": "Lucida Console", //字体设置
-        // "terminal.integrated.shell.linux": "/bin/zsh",
-        },
-        "terminal.integrated.rightClickBehavior": "paste",
-        // "highlightwords.colors": [
-        //     { "light": "#b3d9ff", "dark": "cyan" },
-        //     { "light": "#e6ffb3", "dark": "pink" },
-        //     { "light": "#b3b3ff", "dark": "lightgreen" },
-        //     { "light": "#ffd9b3", "dark": "magenta" },
-        //     { "light": "#ffb3ff", "dark": "cornflowerblue" },
-        //     { "light": "#b3ffb3", "dark": "orange" },
-        //     { "light": "#ffff80", "dark": "green" },
-        //     { "light": "#d1e0e0", "dark": "red" }                                        
-        // ],
-        // "highlightwords.box": {
-        //     "light": false,
-        //     "dark": true
-        // },
-        // "highlightwords.defaultMode": {
-        //     "default": 1
-        // },
-        // "highlightwords.showSidebar": {
-        //     "default": true
-        // },
-        // "highlight-icemode.backgroundColor": "#D8D8D8",
-        // "highlight-icemode.caseSensitive": true,
-        // "highlight-icemode.borderWidth": "0px", //default 1px
-        // "highlight-icemode.borderRadius": "0px",
-        "editor.occurrencesHighlight": false,
-        "select-highlight-cochineal-color.matchBrackets": false,
-        // "editor.selectionHighlight": false,
-        "copyOnSelect.copyOnMouseSelection": true,
-        "editor.selectionHighlight": false,
-        "bazel.buildifierExecutable": "D:\\Bazel\\buildifier.exe",
-        "bazel.executable": "D:\\Bazel\\bazel.exe",
-        "cmake.autoSelectActiveFolder": false,
-        "terminal.external.windowsExec": "D:\\Git\\bin\\bash.exe",
-        "terminal.integrated.automationProfile.windows": {
+        // =========================================================
+        // 1. 语义高亮 (Semantic) - 优先级最高，负责精准识别
+        // =========================================================
+            // =========================================================
+            // 1. 语义高亮 (Semantic) - 这里的配置会覆盖下面的正则配置
+            //    核心：依靠这里把“使用处”的 Field 颜色救回来
+            // =========================================================
+            "editor.semanticTokenColorCustomizations": {
+                "enabled": true,
+                "rules": {
+                    // --- 【类、接口、结构体】 ---
+                    "class": "#4EC9B0",
+                    "struct": "#4EC9B0",
+                    "interface": "#6B8E23",
+                    "enum": "#4EC9B0",
+                    "delegate": "#4EC9B0",
+                    "namespace": "#E5C07B", 
         
-        },
-        "editor.codeLensFontFamily": "monacob",
-        "C_Cpp.default.includePath": [
-            "G:/work/SDK",
-            "D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-            "D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
-            "D:/mingw64/include/**",
-            "D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
-            "D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-            "D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-            "D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include",
-            "./"
-        ],
-        "C_Cpp.intelliSenseEngineFallback": "Enabled",
-        "gitlens.statusBar.enabled": false,
-        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-        "editor.bracketPairColorization.enabled": false,
-        "editor.guides.bracketPairs": "active",
-        "code-runner.defaultLanguage": "C++",
-        "explorer.confirmDelete": false,
-        "explorer.confirmDragAndDrop": false,
-        "C_Cpp.addNodeAddonIncludePaths": true,
-        "editor.hover.enabled": false,
-        "cppref.lang": "zh",
-        "cppref.searchEngine": "Google",
-        "C_Cpp.intelliSenseCachePath": "D:\\VsCode\\intellisensecachepath",
-        "workbench.colorTheme": "Quiet Light",
-        "editor.smoothScrolling": true,
-        "[cpp]": {
-            "editor.defaultFormatter": "xaver.clang-format"
-        },
-        "editor.tabSize": 2,
-        "chatgpt.emailAddress": "",
-        "chatgpt.gpt3.apiKey": "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",
-        "window.zoomLevel": -1,
-        "clang-format.fallbackStyle": "Google",
-        // "leetcode.filePath": {
-
-        //     "default": {
-        //         "folder": "",
-        //         "filename": "${id}.${kebab-case-name}.${ext}"
-        //     }
-        // },
-        // "terminal.external.windowsExec": "D:\\Git\\bin\\bash.exe --login -i",
-        // // "terminal.integrated.shell.windows":"D:\\Git\\bin\\bash.exe --login -i",
-
-        // "terminal.integrated.profiles.windows": {
-        //     "gitBash": {
-        //         "path": "D:\\Git\\bin\\bash.exe --login -i",//这里是的的bash路径
-        //     }
-        //     },
-        //     "terminal.integrated.defaultProfile.windows": "gitBash"
-
-        // "editor.occurrencesHighlight": false,
-        // "highlight-icemode.borderColor": "", //default ''
-        // "highlight-icemode.backgroundColor": "", //default ''
-        // "EnglishChineseDictionary.enableHover":true,
+                    // --- 【函数 / 方法】 ---
+                    "method": "#eb6f8c",
+        
+                    // --- 【属性 Property】 ---
+                    "property": "#97A054", 
+                    
+                    // --- 【成员变量 Field】(修正重点) ---
+                    "field": "#6E9297",          // 普通成员变量
+                    "field.readonly": "#6E9297", // ★ 新增：只读字段 (不加这个，readonly字段可能会变色)
+                    "field.static": "#6E9297",   // ★ 新增：静态字段 (不加这个，static字段可能会变色)
+                    "enumMember": "#a26a42",
+        
+                    // --- 【局部变量 & 参数】 ---
+                    "variable": "#8490D5",       // 局部变量
+                    "parameter": "#FF8C00",      // 参数
+        
+                    // --- 【其他基础】 ---
+                    "keyword": "#b69ae1",
+                    "string": "#CE9178",
+                    "number": "#9cb68d",
+                    "comment": "#B9B0B9"
+                }
+            },
+        
+            // =========================================================
+            // 2. TextMate 规则 - 这里的配置负责“兜底”和“定义处”
+            // =========================================================
+            "editor.tokenColorCustomizations": {
+                "textMateRules": [
+                    // --- 【类】 ---
+                    {
+                        "scope": ["entity.name.type", "storage.type"],
+                        "settings": { "foreground": "#50C09C" }
+                    },
+                    // --- 【接口】 ---
+                    {
+                        "scope": "entity.name.type.interface",
+                        "settings": { "foreground": "#eb6f8c" }
+                    },
+                    // --- 【函数】 ---
+                    {
+                        "scope": ["entity.name.function", "support.function"],
+                        "settings": { "foreground": "#eb6f8c" }
+                    },
+                    // --- 【属性 Property】 ---
+                    {
+                        "scope": ["entity.name.variable.property", "variable.other.object.property"],
+                        "settings": { "foreground": "#97A054" }
+                    },
+                    
+                    // --- 【成员变量 Field】(TextMate层) ---
+                    // 注意：这一条只能控制“定义处”和“this.field”这种写法
+                    {
+                        "scope": ["entity.name.variable.field", "variable.other.object.field"],
+                        "settings": { "foreground": "#6E9297" }
+                    },
+        
+                    // --- 【消灭紫色 - 兜底规则】 ---
+                    // 这一条非常霸道，它把所有TextMate认不出来的变量都变成了局部变量颜色(#8490D5)
+                    // Field在使用时(不加this)会被这条命中，所以必须依靠上面的 Semantic Rules 来纠正
+                    {
+                        "scope": [
+                            "variable",
+                            "entity.name.variable.local",
+                            "variable.other.readwrite",
+                            "variable.other.object",
+                            "variable.parameter"
+                        ],
+                        "settings": { "foreground": "#8490D5" }
+                    },
+        
+                    // --- 【其他】 ---
+                    {
+                        "scope": ["keyword", "storage.modifier", "storage.type.cs"],
+                        "settings": { "foreground": "#569CD6" }
+                    },
+                    {
+                        "scope": "string",
+                        "settings": { "foreground": "#CE9178" }
+                    },
+                    {
+                        "scope": "comment",
+                        "settings": { "foreground": "#6A9955" }
+                    }
+                ]
+            },
+            "workbench.list.horizontalScrolling": true
+    , 
 }
