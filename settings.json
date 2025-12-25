@@ -344,7 +344,16 @@
     ],
     "files.exclude": {
         "**/Intermediate/**": true,
-        "**/.cache/**": true
+        "**/.cache/**": true,
+        "**/*.prefab": true,
+        "**/*.meta": true, // 强烈建议把 .meta 也屏蔽了，这是 Unity 的垃圾文件
+        "**/*.png": true,
+        "**/*.mat": true,
+        "**/*.fbx": true,
+        "**/*.FBX": true,
+        "**/*.jpg": true,
+        "**/*.anim": true,
+        "**/*.controller": true,
     },
     "search.exclude": {
         "**/Intermediate/**": true,
@@ -427,118 +436,175 @@
         }
     ],
     "switch2idea.ideaPath": "D:\\rider\\JetBrains Rider 2025.2.3\\bin\\rider64.exe"
-        ,"search.searchEditor.defaultNumberOfContextLines": 0
-        // 1. 强制开启全局语义高亮
-        ,"editor.semanticHighlighting.enabled": true,
+    ,"search.searchEditor.defaultNumberOfContextLines": 0
+    // 1. 强制开启全局语义高亮
+    ,"editor.semanticHighlighting.enabled": true,
 
-        // 2. (关键) 告诉 C# 插件“我要增强型高亮”
-        // 如果你是用新版 C# Dev Kit，这个通常默认开启，但旧版或者某些环境下需要显式设置
-        "csharp.semanticHighlighting.enabled": true, 
+    // 2. (关键) 告诉 C# 插件“我要增强型高亮”
+    // 如果你是用新版 C# Dev Kit，这个通常默认开启，但旧版或者某些环境下需要显式设置
+    "csharp.semanticHighlighting.enabled": true, 
 
-        // =========================================================
-        // 1. 语义高亮 (Semantic) - 优先级最高，负责精准识别
-        // =========================================================
-            // =========================================================
-            // 1. 语义高亮 (Semantic) - 这里的配置会覆盖下面的正则配置
-            //    核心：依靠这里把“使用处”的 Field 颜色救回来
-            // =========================================================
-            "editor.semanticTokenColorCustomizations": {
-                "enabled": true,
-                "rules": {
-                    // --- 【类、接口、结构体】 ---
-                    "class": "#4EC9B0",
-                    "struct": "#4EC9B0",
-                    "interface": "#6B8E23",
-                    "enum": "#4EC9B0",
-                    "delegate": "#4EC9B0",
-                    "namespace": "#E5C07B", 
-        
-                    // --- 【函数 / 方法】 ---
-                    "method": "#eb6f8c",
-        
-                    // --- 【属性 Property】 ---
-                    "property": "#97A054", 
-                    
-                    // --- 【成员变量 Field】(修正重点) ---
-                    "field": "#6E9297",          // 普通成员变量
-                    "field.readonly": "#6E9297", // ★ 新增：只读字段 (不加这个，readonly字段可能会变色)
-                    "field.static": "#6E9297",   // ★ 新增：静态字段 (不加这个，static字段可能会变色)
-                    "enumMember": "#a26a42",
-        
-                    // --- 【局部变量 & 参数】 ---
-                    "variable": "#8490D5",       // 局部变量
-                    "parameter": "#FF8C00",      // 参数
-        
-                    // --- 【其他基础】 ---
-                    "keyword": "#b69ae1",
-                    "string": "#CE9178",
-                    "number": "#9cb68d",
-                    "comment": "#B9B0B9"
-                }
+    // =========================================================
+    // 1. 语义高亮 (Semantic) - 优先级最高，负责精准识别 这里的配置会覆盖下面的正则配置
+    //    核心：依靠这里把“使用处”的 Field 颜色救回来
+    // =========================================================
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            // --- 【类、接口、结构体】 ---
+            "class": "#4EC9B0",
+            "struct": "#4EC9B0",
+            "interface": "#6B8E23",
+            "enum": "#4EC9B0",
+            "delegate": "#4EC9B0",
+            "namespace": "#E5C07B", 
+
+            // --- 【函数 / 方法】 ---
+            "method": "#eb6f8c",
+
+            // --- 【属性 Property】 ---
+            "property": "#97A054", 
+            
+            // --- 【成员变量 Field】(修正重点) ---
+            "field": "#6E9297",          // 普通成员变量
+            "field.readonly": "#6E9297", // ★ 新增：只读字段 (不加这个，readonly字段可能会变色)
+            "field.static": "#6E9297",   // ★ 新增：静态字段 (不加这个，static字段可能会变色)
+            "enumMember": "#a26a42",
+
+            // --- 【局部变量 & 参数】 ---
+            "variable": "#8490D5",       // 局部变量
+            "parameter": "#FF8C00",      // 参数
+
+            // --- 【其他基础】 ---
+            "keyword": "#b69ae1",
+            "string": "#CE9178",
+            "number": "#9cb68d",
+            "comment": "#B9B0B9",
+
+            // 1. 解决 await, return, if, else
+            // 对应 inspector 里的 "semantic token type: controlKeyword"
+            "controlKeyword": {
+                "foreground": "#b69ae1", 
+                "italic": true,
+                "underline": true
             },
+        }
+    },
         
-            // =========================================================
-            // 2. TextMate 规则 - 这里的配置负责“兜底”和“定义处”
-            // =========================================================
-            "editor.tokenColorCustomizations": {
-                "textMateRules": [
-                    // --- 【类】 ---
-                    {
-                        "scope": ["entity.name.type", "storage.type"],
-                        "settings": { "foreground": "#50C09C" }
-                    },
-                    // --- 【接口】 ---
-                    {
-                        "scope": "entity.name.type.interface",
-                        "settings": { "foreground": "#eb6f8c" }
-                    },
-                    // --- 【函数】 ---
-                    {
-                        "scope": ["entity.name.function", "support.function"],
-                        "settings": { "foreground": "#eb6f8c" }
-                    },
-                    // --- 【属性 Property】 ---
-                    {
-                        "scope": ["entity.name.variable.property", "variable.other.object.property"],
-                        "settings": { "foreground": "#97A054" }
-                    },
-                    
-                    // --- 【成员变量 Field】(TextMate层) ---
-                    // 注意：这一条只能控制“定义处”和“this.field”这种写法
-                    {
-                        "scope": ["entity.name.variable.field", "variable.other.object.field"],
-                        "settings": { "foreground": "#6E9297" }
-                    },
-        
-                    // --- 【消灭紫色 - 兜底规则】 ---
-                    // 这一条非常霸道，它把所有TextMate认不出来的变量都变成了局部变量颜色(#8490D5)
-                    // Field在使用时(不加this)会被这条命中，所以必须依靠上面的 Semantic Rules 来纠正
-                    {
-                        "scope": [
-                            "variable",
-                            "entity.name.variable.local",
-                            "variable.other.readwrite",
-                            "variable.other.object",
-                            "variable.parameter"
-                        ],
-                        "settings": { "foreground": "#8490D5" }
-                    },
-        
-                    // --- 【其他】 ---
-                    {
-                        "scope": ["keyword", "storage.modifier", "storage.type.cs"],
-                        "settings": { "foreground": "#569CD6" }
-                    },
-                    {
-                        "scope": "string",
-                        "settings": { "foreground": "#CE9178" }
-                    },
-                    {
-                        "scope": "comment",
-                        "settings": { "foreground": "#6A9955" }
-                    }
-                ]
+    // =========================================================
+    // 2. TextMate 规则 - 这里的配置负责“兜底”和“定义处”
+    // =========================================================
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            // --- 【类】 ---
+            {
+                "scope": ["entity.name.type", "storage.type"],
+                "settings": { "foreground": "#50C09C" }
             },
-            "workbench.list.horizontalScrolling": true
-    , 
+            // --- 【接口】 ---
+            {
+                "scope": "entity.name.type.interface",
+                "settings": { "foreground": "#eb6f8c" }
+            },
+            // --- 【函数】 ---
+            {
+                "scope": ["entity.name.function", "support.function"],
+                "settings": { "foreground": "#eb6f8c" }
+            },
+            // --- 【属性 Property】 ---
+            {
+                "scope": ["entity.name.variable.property", "variable.other.object.property"],
+                "settings": { "foreground": "#97A054" }
+            },
+            
+            // --- 【成员变量 Field】(TextMate层) ---
+            // 注意：这一条只能控制“定义处”和“this.field”这种写法
+            {
+                "scope": ["entity.name.variable.field", "variable.other.object.field"],
+                "settings": { "foreground": "#6E9297" }
+            },
+
+            // --- 【消灭紫色 - 兜底规则】 ---
+            // 这一条非常霸道，它把所有TextMate认不出来的变量都变成了局部变量颜色(#8490D5)
+            // Field在使用时(不加this)会被这条命中，所以必须依靠上面的 Semantic Rules 来纠正
+            {
+                "scope": [
+                    "variable",
+                    "entity.name.variable.local",
+                    "variable.other.readwrite",
+                    "variable.other.object",
+                    "variable.parameter"
+                ],
+                "settings": { "foreground": "#8490D5" }
+            },
+
+            // --- 【其他】 ---
+            {
+                "scope": ["keyword", "storage.modifier", "storage.type.cs"],
+                "settings": { "foreground": "#569CD6" }
+            },
+            {
+                "scope": "string",
+                "settings": { "foreground": "#CE9178" }
+            },
+            {
+                "scope": "comment",
+                "settings": { "foreground": "#6A9955" }
+            },
+        ]
+    },
+
+    "workbench.list.horizontalScrolling": true,
+    "svnBlamer.enableLogs": false,
+    "svnBlamer.enableVisualIndicators": false,
+    "svnBlamer.autoBlame": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "outline-map.follow": "manual",
+    "outline-map.expand": "expanded",
+    "switch2idea.keyboardShortcut": "alt+v",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["d", "f"],
+            "after": ["\"", "_", "d", "d"] 
+        },
+        {
+            "before": ["g", "p"],
+            // 翻译：
+            // 1. o      -> 开新行，光标位于正确的缩进位置
+            // 2. <C-r>  -> 准备读取寄存器
+            // 3. "      -> 读取默认寄存器 (剪贴板内容)
+            // 4. <Esc>  -> 粘贴完后，优雅退出插入模式
+            "after": ["o", "<C-r>", "\"", "<Esc>"]
+        },
+        {
+            "before": ["g", "h"],
+            "after": ["i", "x", "<Esc>", "=", "=", "\"", "_", "S"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["d", "f"],
+            "after": ["\"", "_", "d"] 
+        },
+        // 👇 新增这个：解决 y 之后光标乱跳的问题
+        {
+            "before": ["y"],
+            "after": ["y", "g", "v", "<Esc>"]
+        },
+        // 👇 让 > 缩进后不丢失选中
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        // 👇 让 < 反缩进后不丢失选中
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        }
+    ],
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.useTerminal": true,
+    "jump.display.color": "#4EC9B0",
+    "jump.display.backgroundColor": "#222222",
 }

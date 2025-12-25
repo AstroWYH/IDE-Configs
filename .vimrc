@@ -11,8 +11,8 @@ nnoremap j h
 nnoremap h i
 nnoremap I 7k
 nnoremap K 7j
-nnoremap J 7h
-nnoremap L 7l
+nnoremap J 10h
+nnoremap L 10l
 nnoremap <C-j> ^
 nnoremap <C-l> $
 nnoremap <C-k> 7<C-e>
@@ -32,12 +32,12 @@ vnoremap j h
 vnoremap h i
 vnoremap I 7k
 vnoremap K 7j
-vnoremap J 7h
-vnoremap L 7l
+vnoremap J 10h
+vnoremap L 10l
 vnoremap <C-j> ^
 vnoremap <C-l> $
-vnoremap <C-K> 7<C-e>
-vnoremap <C-I> 7<C-y>
+vnoremap <C-k> 7<C-e>
+vnoremap <C-i> 7<C-y>
 vnoremap ! ^
 vnoremap @ $
 vnoremap <C-n> # *

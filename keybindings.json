@@ -3304,7 +3304,7 @@
         "when": "inlineChatHasProvider && inlineChatVisible"
     },
     {
-        "key": "ctrl+numpad9",
+        "key": "ctrl+m",
         "command": "workbench.action.focusFirstEditorGroup"
     },
     {
@@ -4403,7 +4403,7 @@
         "when": "inSearchEditor && searchInputBoxFocus"
     },
     {
-        "key": "ctrl+numpad0",
+        "key": "ctrl+oem_2",
         "command": "search.action.focusSearchList"
     },
     {
@@ -4626,7 +4626,121 @@
         "when": "hasSearchResult && searchViewletFocus"
     },
     {
-        "key": "alt+d",
+        "key": "shift+alt+d",
         "command": "search.action.openNewEditor"
+    },
+    // 强制将 Alt+k 映射为 Vim 的 7<C-e>
+    {
+        "key": "alt+k",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.mode != 'Insert'",
+        "args": {
+        "after": ["1", "<C-e>"]
+        }
+    },
+    // 强制将 Alt+i 映射为 Vim 的 7<C-y>
+    {
+        "key": "alt+i",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.mode != 'Insert'",
+        "args": {
+        "after": ["1", "<C-y>"]
+        }
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "workbench.action.focusPanel"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+oem_5",
+        "command": "workbench.view.extension.outline-map"
+    },
+    {
+        "key": "ctrl+numpad8",
+        "command": "outline-map.workspace.goToLocation"
+    },
+    {
+        "key": "alt+l",
+        "command": "-outline-map.focusSearch"
+    },
+    {
+        "key": "alt+v",
+        "command": "Switch2IDEA.openFileInIDEA",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "-Switch2IDEA.openFileInIDEA",
+        "when": "editorTextFocus"
+    },
+    // 1. Visual Mode 下 Ctrl+K = 向下卷动视图 7 行 (模拟 7<C-e>)
+    {
+        "key": "ctrl+k",
+        "command": "editorScroll",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 7,
+            "revealCursor": false 
+        },
+        // 关键：限制在 Visual Mode 且 Vim 激活时生效
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Visual' || vim.mode == 'VisualLine')"
+    },
+    // 2. Visual Mode 下 Ctrl+I = 向上卷动视图 7 行 (模拟 7<C-y>)
+    {
+        "key": "ctrl+i",
+        "command": "editorScroll",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 7,
+            "revealCursor": false
+        },
+        "when": "editorTextFocus && vim.active && (vim.mode == 'Visual' || vim.mode == 'VisualLine')"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                // 1. 强制选中当前词 (借用 VSCode 的 Ctrl+D 逻辑，不仅精准还能高亮)
+                "editor.action.addSelectionToNextFindMatch",
+                // 2. 此时已有选中内容，立即调出查找面板，它会自动填入并锁定该词
+                "actions.find"
+            ]
+        },
+        // 限制在 Vim 非插入模式下生效
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "escape",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                // 1. 关闭查找框
+                "closeFindWidget",
+                // 2. 模拟输入 'v' (强制 Vim 回到 Normal)
+                {
+                    "command": "type",
+                    "args": {
+                        "text": "v"
+                    }
+                }
+            ]
+        },
+        // 【修改原理】
+        // 既然 editorFindWidgetVisible 判定有问题，我们就直接判定焦点位置。
+        // findInputFocussed: 只有当你的光标在“查找输入框”里闪烁时，才触发。
+        // editorHasSelection: 且编辑器里有选中内容（防止普通查找被误触）。
+        // 注意：Focussed 是英式拼写，VS Code 内部用的就是两个 s
+        "when": "findInputFocussed && editorHasSelection"
     }
 ]
