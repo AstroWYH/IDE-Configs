@@ -3742,10 +3742,6 @@
     },
     {
         "key": "ctrl+o",
-        "command": "metaGo.gotoSmart"
-    },
-    {
-        "key": "ctrl+o",
         "command": "-extension.vim_ctrl+o",
         "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
     },
@@ -4553,7 +4549,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+o",
+        "key": "ctrl+numpad9",
         "command": "jump-extension.jump-to-the-start-of-a-word",
         "when": "editorTextFocus"
     },
@@ -4706,19 +4702,72 @@
         },
         "when": "editorTextFocus && vim.active && (vim.mode == 'Visual' || vim.mode == 'VisualLine')"
     },
+    // {
+    //     "key": "ctrl+2",
+    //     "command": "runCommands",
+    //     "args": {
+    //         "commands": [
+    //             // 1. 强制选中当前词 (借用 VSCode 的 Ctrl+D 逻辑，不仅精准还能高亮)
+    //             "editor.action.addSelectionToNextFindMatch",
+    //             // 2. 此时已有选中内容，立即调出查找面板，它会自动填入并锁定该词
+    //             "actions.find"
+    //         ]
+    //     },
+    //     // 限制在 Vim 非插入模式下生效
+    //     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    // },
+    // 第一种情况：在 Normal 模式下
+    // 策略：用 VS Code 原生命令选中单词(不滚动) -> 用 Vim 命令归位光标 -> 查找
     {
         "key": "ctrl+2",
         "command": "runCommands",
         "args": {
             "commands": [
-                // 1. 强制选中当前词 (借用 VSCode 的 Ctrl+D 逻辑，不仅精准还能高亮)
+                // 1. 使用 VS Code 原生命令选中当前词 (类似 Ctrl+D)
+                // 优势：完全不触发 Vim 的视口滚动计算，但能让 Vim 进入 Visual 状态
                 "editor.action.addSelectionToNextFindMatch",
-                // 2. 此时已有选中内容，立即调出查找面板，它会自动填入并锁定该词
+
+                // 2. 此时 Vim 认为在 Visual 模式，光标在词尾。
+                // 我们调用 Vim 的 'o' (跳到词头) 和 'Esc' (退出)。
+                // 你的配置里没有重映射 'o'，所以这是安全的。
+                {
+                    "command": "vim.remap",
+                    "args": {
+                        "commands": [
+                            { "command": "o" },
+                            { "command": "<Esc>" }
+                        ]
+                    }
+                },
+
+                // 3. 打开查找
+                // 此时状态完美：Normal 模式，光标在词头，无选区。
+                // F2 会直接跳到下一个。
                 "actions.find"
             ]
         },
-        // 限制在 Vim 非插入模式下生效
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+    },
+
+    // 第二种情况：Visual Mode 保持不变 (你验证过它是完美的)
+    {
+        "key": "ctrl+2",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                {
+                    "command": "vim.remap",
+                    "args": {
+                        "commands": [
+                            { "command": "o" },
+                            { "command": "<Esc>" }
+                        ]
+                    }
+                },
+                "actions.find"
+            ]
+        },
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'"
     },
     {
         "key": "escape",
@@ -4742,5 +4791,32 @@
         // editorHasSelection: 且编辑器里有选中内容（防止普通查找被误触）。
         // 注意：Focussed 是英式拼写，VS Code 内部用的就是两个 s
         "when": "findInputFocussed && editorHasSelection"
-    }
+    },
+    {
+        "key": "ctrl+h",
+        "command": "editor.cpp.toggle"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "extension.vim_ctrl+o"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "metaGo.gotoSmart"
+    },
+    // {
+    //     "key": "ctrl+o",
+    //     "command": "vim.remap",
+    //     "args": {
+    //         // 【打开思路的方案】
+    //         // 步骤拆解：
+    //         // 1. <Leader><Leader>s -> 触发全屏搜索模式
+    //         // 2. " " (空格) -> 自动输入一个空格
+    //         // 结果：瞬间高亮全屏所有单词之间的空隙，实现全屏盲跳。
+    //         "after": ["<Leader>", "<Leader>", "s", " "]
+    //     },
+    //     "when": "editorTextFocus && vim.active && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    // },
+
+
 ]

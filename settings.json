@@ -95,7 +95,6 @@
     "vim.vimrc.enable": true,
     "vim.leader": ";",
     "vim.ignorecase": false,
-    "vim.easymotion": false,
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vscode-easymotion.allowJumpingToWordlessLines": true,
@@ -305,7 +304,6 @@
     "C_Cpp.codeAnalysis.clangTidy.codeAction.showDisable": false,
     "leetcode-problem-rating.hint.commentDescription": false,
     "C_Cpp.clang_format_fallbackStyle": "Google",
-    "editor.tabSize": 2,
     "editor.scrollbar.horizontalScrollbarSize": 2,
     "editor.scrollbar.verticalScrollbarSize": 2,
     "editor.quickSuggestionsDelay": 0,
@@ -313,7 +311,7 @@
     "leetcode-problem-rating.endpoint": "leetcode-cn",
     "godotTools.editorPath.godot4": "",
     "chat.commandCenter.enabled": false,
-    "metaGo.decoration.characters": "1, 2, 3, k, j, d, f, l, s, a, h, g, i, o, n, u, r, v, c, w",
+    "metaGo.decoration.characters": "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z",
     "metaGo.decoration.additionalSingleCharCodeCharacters": "e, x, m, b, p, q, t, y, z",
     "metaGo.decoration.fontFamily": "victor mono",
     "clangd.arguments": [
@@ -548,8 +546,8 @@
                 "settings": { "foreground": "#CE9178" }
             },
             {
-                "scope": "comment",
-                "settings": { "foreground": "#6A9955" }
+                "scope": ["comment.documentation", "comment", "comment.block", "comment.line", "punctuation.definition.comment"],
+                "settings": { "foreground": "#B9B0B9" } 
             },
         ]
     },
@@ -587,6 +585,11 @@
             "before": ["d", "f"],
             "after": ["\"", "_", "d"] 
         },
+        // 👇 新增这一段：把 dd 映射为 d
+        {
+            "before": ["d", "d"],
+            "after": ["d"]
+        },
         // 👇 新增这个：解决 y 之后光标乱跳的问题
         {
             "before": ["y"],
@@ -607,4 +610,16 @@
     "claudeCode.useTerminal": true,
     "jump.display.color": "#4EC9B0",
     "jump.display.backgroundColor": "#222222",
+    "diffEditor.renderSideBySide": false,
+
+    // 1. 开启 EasyMotion 引擎
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "abcdefghijklmnopqrstuvwxyz",
+
+    // 2. (可选) 让跳转的红点更醒目：红色背景，白色文字，加粗
+    "vim.easymotionMarkerBackgroundColor": "#222222",
+    "vim.easymotionMarkerForegroundColorOneChar": "#4EC9B0", 
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionDimBackground": true,
+    "metaGo.decoration.color": "white,pink",
 }
